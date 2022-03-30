@@ -1,0 +1,861 @@
+
+html{
+
+    font-size: 0.5208333333333333vw;
+5
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #212121;
+    /* cursor: url('../image/icon/cursor_astronaut.png'), auto; */
+    /* height: 100vh; */
+    overflow: hidden;
+}
+
+.footwalk{
+    cursor: url('../image/icon/cursor_footwalk.png'), auto;
+}
+
+[lang=en]{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ir */
+
+.ir{
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+}
+
+
+
+
+/* * red ******************************************************************** */
+
+
+/* wave */
+
+div.wave-wrapper{
+    position: fixed;
+    bottom: -30rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+lottie-player{
+   transform: rotate(180deg);
+   position: relative;
+   /* bottom: 70rem; */
+   overflow: hidden;
+}
+
+/* div.orange-box{
+    width: 100vw;
+    height: 5rem;
+    background-color: #FF9E0C;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin-top: -1rem;
+} */
+
+div.stars-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100rem;
+    height: 50rem;
+    background-image: url('../image/icon/stars_lightblack.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    z-index: -1;
+}
+
+
+
+
+
+/* header */
+
+header.header-wrapper{
+    padding: 5.5rem 8.4rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+header.header-wrapper div.inner{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.logo{
+    width: 12.7rem;
+    height: 2.2rem;
+}
+
+h1.logo img{
+    display: block;
+    width: 100%;
+}
+
+
+/* gnb */
+
+
+div.gnb-wrapper{
+    width: 100%;
+}
+
+ul.mainmenu-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul.mainmenu-list li{
+    position: relative;
+}
+
+ul.mainmenu-list li a{
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+div.gnb-ball{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #FF9E0C;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+ul.mainmenu-list li:hover div.gnb-ball{
+    opacity: 1;
+}
+
+
+/* search */
+
+div.search-wrapper{
+    width: 26rem;
+    height: 2rem;
+    position: relative;
+}
+
+div.search-wrapper form{
+    background-image: url('../image/icon/search_line_l.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    padding-bottom: 1.5rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}
+
+input.search{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    width: 95%;
+    height: 100%;
+}
+
+input.search::placeholder{
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+}
+
+button.search-btn{
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    background-image: url('../image/icon/search_icon_l.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+
+/* mobile menu btn */
+
+div.mobile-home-btn,
+div.mobile-mypage-btn{
+    cursor: pointer;
+    width: 3rem;
+    height: 2.9rem;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+div.mobile-home-btn{
+    left: 0px;
+}
+
+div.mobile-mypage-btn{
+    right: 0px;
+}
+
+div.mobile-home-btn img,
+div.mobile-mypage-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+div.mobile-menu-btn{
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+div.mobile-menu-btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+
+div.mobile-menu-btn .line01,
+div.mobile-menu-btn .line02,
+div.mobile-menu-btn .line03{
+    width: 100%;
+    height: 0.2rem;
+    position: absolute;
+    left: 0px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+div.mobile-menu-btn .line01{
+    top: 0px;
+}
+
+div.mobile-menu-btn .line02{
+    top: 1rem;
+}
+
+div.mobile-menu-btn .line03{
+    top: 2rem;
+}
+
+div.mobile-menu-btn .line02.on{
+    transform: scaleX(0);
+}
+
+div.mobile-menu-btn .line01.on{
+    top: 1rem;
+}
+
+div.mobile-menu-btn .line03.on{
+    transform: rotate(90deg);
+    top: 1rem;
+}
+
+div.mobile-menu-btn a.on{
+    transform: rotate(45deg);
+}
+
+
+
+
+/* *mobile gnb */
+
+nav.mobile-gnb{
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    display: none;
+}
+
+div.mobile-gnb-inner{
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    padding-top: 20rem;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+button.mobile-close-btn{
+    border: none;
+    background-color: transparent;
+    background-image: url('../image/icon/close.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+ul.mobile-menulist li{
+    margin: 5rem 0px 5rem 0px;
+    position: relative;
+}
+
+ul.mobile-menulist li a{
+    color: #fff;
+    font-size: 2.6rem;
+}
+
+div.mobile-gnb-ball{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #FF9E0C;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+ul.mobile-menulist li:hover div.mobile-gnb-ball{
+    opacity: 1;
+}
+
+
+/* content wrapper */
+
+section.music-content-wrapper{
+    margin: 20rem auto;
+    position: relative;
+    z-index: 999;
+    max-width: 128rem;
+
+}
+
+p.music-recently{
+    font-size: 2.4rem;
+    color: #fff;
+    margin-bottom: 1.6rem;
+}
+
+p.music-recently span{
+    color: #FF9E0C;
+}
+
+div.music-img-wrapper{
+    width: 34rem;
+    height: 56rem;
+    border-radius: 1.5rem;
+    background-image: url('../image/movie/the-nightmare-before-christmas_4fda_2500x4000.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 3rem;
+    box-shadow: -0.1rem 0rem 8rem 2.5rem rgba(255, 255, 255, 10%);
+    position: relative;
+}
+
+div.music-text-wrapper p{
+    color: #fff;
+    text-align: center;
+    max-width: 34rem;
+}
+
+p.music-title{
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+p.music-subtitle{
+    font-size: 1.7rem;
+}
+
+div.music-function{
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    margin: 2rem;
+    box-sizing: border-box;
+}
+
+div.music-function button{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    cursor: pointer;
+}
+
+button.like{
+    background-image: url('../image/icon/like.png');
+}
+
+
+button.addlist{
+    background-image: url('../image/icon/addlist.png');
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+
+
+/* planet */
+
+span.layer-img{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+span.earth{
+    width: 10rem;
+    height: 10rem;
+    background-image: url('../image/icon/planet_earth.png');
+    top: 20rem;
+    left: 45rem;
+}
+
+span.moon{
+    width: 13rem;
+    height: 11.5rem;
+    background-image: url('../image/icon/planet_moon.png');
+    top: 0rem;
+    left: 60rem;
+}
+
+span.sun{
+    width: 12.5rem;
+    height: 12.5rem;
+    background-image: url('../image/icon/planet_sun.png');
+    top: 15rem;
+    left: 85rem;
+}
+
+span.nana{
+    width: 15rem;
+    height: 10rem;
+    background-image: url('../image/icon/planet_nana.png');
+    bottom: 30rem;
+    left: 110rem;
+}
+
+
+
+
+/* music player */
+
+section.music-player-wrapper{
+    position: absolute;
+    bottom: 7rem;
+    right: 40rem;
+}
+
+div.music-player{
+    width: 56rem;
+    height: 13.8rem;
+    background-image: url('../image/icon/playbar.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+}
+
+audio.audiplay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************************************************************** */
+
+/* 1480 crimson */
+
+
+@media screen and (max-width:1480px){
+
+    html{
+        font-size: 0.6756756756756757vw;
+    }
+
+    
+    /* wave */
+    
+    div.stars-item{
+        width: 90rem;
+        height: 45rem;
+    }
+
+    div.wave-wrapper{
+        bottom: -20rem;
+    }
+
+
+
+    /* content wrapper */
+
+    section.music-content-wrapper{
+        max-width: 100rem;
+    }
+
+    div.music-img-wrapper{
+        width: 30rem;
+        height: 47.1rem;
+    }
+
+    div.music-text-wrapper p{
+        max-width: 30rem;
+    }
+
+    /* music player */
+
+    section.music-player-wrapper{
+        top: 70rem;
+        right: 15rem;
+    }
+    
+    div.music-player{
+        width: 44.5rem;
+        height: 11rem;
+    }
+    
+
+    /* planet */
+    
+    span.earth{
+        left: 40rem;
+    }
+    
+    span.moon{
+        left: 50rem;
+    }
+    
+    span.sun{
+        left: 75rem;
+    }
+    
+    span.nana{
+        bottom: 20rem;
+        left: 90rem;
+    }
+
+
+
+
+}
+
+
+/* 1280 orange */
+
+@media screen and (max-width:1280px){
+
+    html{
+        font-size: 0.78125vw;
+    }
+
+    /* wave */
+
+    div.wave-wrapper{
+        bottom: -10rem;
+    }
+
+    
+    /* content wrapper */
+
+    section.music-content-wrapper{
+        max-width: 80rem;
+    }
+
+
+    /* planet */
+
+    span.earth{
+        width: 8rem;
+        height: 8rem;
+        left: 35rem;
+        background-image: url('../image/icon/planet_earth_01.png');
+    }
+    
+    span.moon{
+        width: 11.4rem;
+        height: 10rem;
+        left: 45rem;
+        background-image: url('../image/icon/planet_moon_01.png');
+    }
+    
+    span.sun{
+        width: 10rem;
+        height: 10rem;
+        left: 60rem;
+        background-image: url('../image/icon/planet_sun_01.png');
+    }   
+    
+    span.nana{
+        width: 12rem;
+        height: 8rem;
+        bottom: 28rem;
+        left: 75rem;
+        background-image: url('../image/icon/planet_nana_01.png');
+    }
+
+
+}
+
+music-player
+
+
+/* 1024 gold */
+
+@media screen and (max-width:1024px){
+
+    html{
+        font-size: 0.9765625vw;
+    }
+
+    
+
+    
+    /* header, gnb,search */
+
+    header.header-wrapper{
+        padding: 4rem 6rem;
+    }
+
+    h1.logo,
+    ul.mainmenu-list li a,
+    div.search-wrapper{
+        display: none;
+    }
+
+    /* mobile menu */
+
+    div.mobile-home-btn,
+    div.mobile-mypage-btn{
+        display: block;
+    }
+    
+    div.mobile-menu-btn{
+        display: block;
+    }
+        
+    
+
+        
+    /* content wrapper */
+
+    section.music-content-wrapper{
+        max-width: 60rem;
+        margin: 0rem;
+        position: absolute;
+        top: 15rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    div.music-img-wrapper{
+        width: 23.5rem;
+        height: 36.9rem;
+    }
+
+    div.music-text-wrapper p{
+        max-width: 23.5rem;
+    }
+
+    div.music-function span{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    /* music player */
+
+    section.music-player-wrapper{
+        width: 44.5rem;
+        height: 11rem;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 10rem;
+    }
+
+    /* planet */
+
+    span.earth{
+        top: 30rem;
+        left: -35rem;
+    }
+    
+    span.moon{
+        top: 0rem;
+        left: -20rem;
+    }
+    
+    span.sun{
+        bottom: 10rem;
+        left: 32rem;
+    }   
+    
+    span.nana{
+        bottom: 10rem;
+        left: 45rem;
+    }    
+
+
+
+}
+
+
+
+
+
+/* 540 cornflowerblue */
+
+@media screen and (max-width:540px){
+
+    html{
+        font-size: 1.851851851851852vw;
+    }
+
+    /* wave */
+
+    div.wave-wrapper{
+        bottom: 0rem;
+    }
+
+    
+
+
+    /* content wrapper */
+
+    section.music-content-wrapper{
+        max-width: 40rem;
+    }
+
+    p.music-recently{
+        font-size: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    div.music-img-wrapper{
+        width: 23.5rem;
+        height: 36.9rem;
+    }
+
+    div.music-function span{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    span.like{
+        background-image: url('../image/icon/like.png');   
+    }
+
+    span.addlist{
+        background-image: url('../image/icon/addlist.png');
+        margin-left: 1rem;
+        box-sizing: border-box;
+    }
+
+    /* planet */
+
+    span.earth{
+        left: -14rem;
+    }
+
+    span.moon{
+        left: -12rem;
+    }
+    
+    span.sun{
+        left: 28rem;
+    }   
+    
+    span.nana{
+        left: 28rem;
+    }       
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

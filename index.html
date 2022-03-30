@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드리밍</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/icon/favicon.ico">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/second.css">
+
+    <!-- js -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+
+
+    
+    <div class="wave-wrapper">
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_flvkamxy.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+        <div class="orange-box"></div>
+    </div>
+        
+        
+    <div class="stars-item"></div>
+    
+
+    <header class="header-wrapper">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#" title="드리밍">
+                    <img src="image/icon/logo.png" alt="드리밍 로고">
+                </a>
+            </h1>
+
+            <div class="gnb-wrapper">
+                <nav class="gnb">
+                    <ul class="mainmenu-list">
+                        <li>
+                            <div class="gnb-ball"></div>
+                            <a href="#" lang="en">
+                                THEME
+                            </a>
+                        </li>
+                        <li>
+                            <div class="gnb-ball"></div>
+                            <a href="#" lang="en">
+                                MOVIE
+                            </a>
+                        </li>
+                        <li>
+                            <div class="gnb-ball"></div>
+                            <a href="#" lang="en">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <div class="gnb-ball"></div>
+                            <a href="#" lang="en">
+                                MY PAGE
+                            </a>
+                        </li>
+                    </ul><!--mainmenu-->
+
+                    
+                </nav>
+            </div>
+
+            <div class="search-wrapper">
+                <form action="#" method="get">
+                    <input type="text" maxlength="15" class="search">
+                    <button class="search-btn">
+                        <span class="ir">검색 버튼</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="mobile-btn">
+
+                <div class="mobile-home-btn">
+                    <img src="image/icon/home.png" alt="모바일 홈 버튼">
+                </div>
+
+                <div class="mobile-menu-btn">
+                    <a href="#" title="모바일 메뉴 버튼">
+                        <span class="line01"></span>
+                        <span class="line02"></span>
+                        <span class="line03"></span>
+                    </a>
+                </div>
+
+                <div class="mobile-mypage-btn">
+                    <img src="image/icon/mypage.png" alt="모바일 마이페이지 버튼">
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- mobile -->
+
+    <nav class="mobile-gnb">
+        <div class="mobile-gnb-inner">
+            <button class="mobile-close-btn">
+                <span class="ir">모바일 메뉴 닫기 버튼</span>
+            </button>
+
+            <ul class="mobile-menulist">
+                <li>
+                    <div class="mobile-gnb-ball"></div>
+                    <a href="#" lang="en">THEME</a>
+                </li>        
+                <li>
+                    <div class="mobile-gnb-ball"></div>
+                    <a href="#" lang="en">MOVIE</a>
+                </li> 
+                <li>
+                    <div class="mobile-gnb-ball"></div>
+                    <a href="#" lang="en">ABOUT</a>
+                </li>  
+                <li>
+                    <div class="mobile-gnb-ball"></div>
+                    <a href="#" lang="en">MY PAGE</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="music-content-wrapper">
+        <h2 class="ir">음악 콘텐츠 영역</h2>
+        <p class="music-recently" lang="en">
+            <span>!</span> Recently
+        </p>
+
+        <div class="music-img-wrapper">
+            <div class="music-function">
+                <button class="like"></button>
+                <button class="addlist"></button>
+            </div>
+        </div>
+
+        <div class="music-text-wrapper">
+            <p class="music-title" lang="en">
+                This Is Halloween
+            </p>
+            <p class="music-subtitle" lang="en">
+                The Citizens of Halloween
+            </p>
+        </div>
+
+        <span class="layer-img earth"></span>
+        <span class="layer-img moon"></span>
+        <span class="layer-img sun"></span>
+        <span class="layer-img nana"></span>
+
+    </section>
+
+    <section class="music-player-wrapper">
+        <h2 class="ir">음악 플레이어 영역</h2>
+        <div class="music-player">
+            <audio controls class="audiplay" >
+                <source
+                src="This Is Halloween (From Tim Burton's 'The Nightmare Before Christmas').mp3"
+                type="audio/mp3"/>
+            </audio>
+        </div>
+    </section>
+
+
+
+
+    
+    
+
+    
+
+
+
+    
+    
+</body>
+</html>

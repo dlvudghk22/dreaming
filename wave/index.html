@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div.wrapper{
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            position: relative;
+            overflow: hidden;
+        }
+        div.wave-item{
+            position: absolute;
+            width: 300vw;
+            height: 80vh;
+            background-image: url('wave_orange.svg');
+            z-index: 99;
+            /* background-repeat: no-repeat; */
+            bottom: 0;
+            animation: wave-ani01 10s linear infinite;
+            
+        }
+        @keyframes wave-ani01{
+            0%{
+                margin-left: 0;
+            }
+            100%{
+                margin-left: -100vw;
+            }
+        }
+
+
+        div.wave-item02{
+            position: absolute;
+            width: 300vw;
+            height: 100vh;
+            background-image: url('wave_beige.svg');
+            z-index: 98;
+            bottom: 0;
+            animation: wave-ani02 20s linear infinite;
+        }
+  
+        @keyframes wave-ani02{
+            0%{
+                margin-left: 0;
+            }
+            100%{
+                margin-left: -100vw;
+            }
+        
+        }
+
+        div.stars-item{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100vh;
+            background-image: url('stars_black.gif');
+            background-repeat: no-repeat;
+            background-size: 50% 50%;
+            background-position: center center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="wave-item">
+           
+        </div>
+        <div class="wave-item02"></div>
+
+        <div class="stars-item">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

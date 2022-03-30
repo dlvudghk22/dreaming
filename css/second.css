@@ -2,7 +2,7 @@
 html{
 
     font-size: 0.5208333333333333vw;
-5
+
 }
 
 body{
@@ -674,7 +674,7 @@ audio.audiplay{
 
 }
 
-music-player
+
 
 
 /* 1024 gold */
@@ -687,11 +687,11 @@ music-player
 
     
 
-    
+        
     /* header, gnb,search */
 
     header.header-wrapper{
-        padding: 4rem 6rem;
+    padding: 4rem 6rem;
     }
 
     h1.logo,
@@ -706,7 +706,7 @@ music-player
     div.mobile-mypage-btn{
         display: block;
     }
-    
+
     div.mobile-menu-btn{
         display: block;
     }
